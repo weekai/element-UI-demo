@@ -40,6 +40,41 @@ const menu = [
     cn: "图标",
     en: "icon",
     route: "/icon"
+  },
+  {
+    cn: "按钮",
+    en: "button",
+    route: "/button"
+  },
+  {
+    cn: "单选框",
+    en: "radio",
+    route: "/radio"
+  },
+  {
+    cn: "多选框",
+    en: "checkbox",
+    route: "/checkbox"
+  },
+  {
+    cn: "输入框",
+    en: "input",
+    route: "/input"
+  },
+  {
+    cn: "计数器",
+    en: "inputNumber",
+    route: "/inputNumber"
+  },
+  {
+    cn: "选择器",
+    en: "select",
+    route: "/select"
+  },
+  {
+    cn: "级联选择器",
+    en: "cascader",
+    route: "/cascader"
   }
 ];
 export default {
