@@ -245,7 +245,7 @@ export default {
   */
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .el-row {
   margin-bottom: 20px;
   &:last-child {

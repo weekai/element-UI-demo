@@ -78,7 +78,7 @@
 <script>
 export default {};
 </script>
-<style lang="less">
+<style lang="less" scoped>
 i {
   margin: 20px;
   font-size: 20px;

@@ -62,7 +62,7 @@ export default {
   })
 };
 </script>
-<style>
+<style scoped>
 .transition-box {
   width: 200px;
   height: 100px;

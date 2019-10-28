@@ -96,7 +96,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .el-header {
   background-color: #b3c0d1;
   color: #333;
