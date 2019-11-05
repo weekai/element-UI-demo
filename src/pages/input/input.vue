@@ -1,19 +1,24 @@
 <template>
   <div>
     <!-- 基础用法 -->
+    <h3>基础用法</h3>
     <el-input v-model="input" placeholder="请输入内容"></el-input>
 
     <!-- 禁用状态 -->
+    <h3>禁用状态</h3>
     <el-input placeholder="请输入内容" v-model="input" :disabled="true"></el-input>
 
     <!-- 可清空  使用clearable属性即可得到一个可清空的输入框 -->
+    <h3>可清空</h3>
     <el-input placeholder="请输入内容" v-model="input" clearable></el-input>
 
     <!-- 密码框  使用show-password属性即可得到一个可切换显示隐藏的密码框-->
+    <h3>密码框</h3>
     <el-input v-model="input" placeholder=" 请输入密码" show-password></el-input>
 
     <!-- 带 icon 的输入框 -->
     <!-- 可以通过 prefix-icon 和 suffix-icon 属性在 input 组件首部和尾部增加显示图标，也可以通过 slot 来放置图标。 -->
+    <h3>带 icon 的输入框</h3>
     <div>
       <div class="demo-input-suffix">
         <el-input v-model="input1" placeholder="请选择日期" suffix-icon="el-icon-date"></el-input>
@@ -21,6 +26,7 @@
       </div>
 
       <!-- slot 方式 -->
+      <h3>slot</h3>
       <div>
         <el-input placeholder="请选择日期" v-model="input3">
           <i slot="suffix" class="el-input__icon el-icon-date"></i>
@@ -33,11 +39,13 @@
     </div>
 
     <!-- 文本域  通过将 type 属性的值指定为 textarea  文本域高度可通过 rows 属性控制-->
+    <h3>文本域</h3>
     <el-input v-model="textarea" placeholder="请输入内容" :rows="2" type="textarea"></el-input>
 
     <!-- 可自适应文本高度的文本域-->
     <!-- 通过设置 autosize 属性可以使得文本域的高度能够根据文本内容自动进行调整 -->
     <!-- autosize 还可以设定为一个对象，指定最小行数和最大行数 -->
+    <h3>可自适应文本高度的文本域</h3>
     <el-input v-model="textarea1" placeholder="请输入内容" autosize type="textarea"></el-input>
 
     <el-input
@@ -49,9 +57,11 @@
 
     <!-- 复合型输入框    可前置或后置元素，一般为标签或按钮-->
     <!-- 可通过 slot 来指定在 input 中前置或者后置内容 -->
+    <h3>复合型输入框</h3>
     <compoundinputbox></compoundinputbox>
 
     <!-- 尺寸   通过 size 属性指定输入框的尺寸，除了默认的大小外，还提供了 large、small 和 mini 三种尺寸-->
+    <h3>尺寸</h3>
     <div class="demo-list-size">
       <el-input placeholder="请输入内容" suffix-icon="el-icon-date" v-model="input1"></el-input>
       <el-input size="medium" placeholder="请输入内容" suffix-icon="el-icon-date" v-model="input1"></el-input>
@@ -62,11 +72,13 @@
     <!-- 带输入建议   根据输入内容提供对应的输入建议-->
     <!-- autocomplete 是一个可带输入建议的输入框组件，fetch-suggestions 是一个返回输入建议的方法属性 -->
     <!-- querySearch(queryString, cb)，在该方法中你可以在你的输入建议数据准备好时通过 cb(data) 返回到 autocomplete 组件中 -->
+    <h3>带输入建议</h3>
     <suggestinput></suggestinput>
 
     <!-- 输入长度限制 -->
     <!-- maxlength 和 minlength 是原生属性，用来限制输入框的字符长度 -->
     <!-- 类型为 text 或 textarea 的输入框，在使用 maxlength 属性限制最大输入长度的同时，可通过设置 show-word-limit 属性来展示字数统计。 -->
+    <h3>输入长度限制</h3>
     <el-input type="input" placeholder="请输入内容" v-model="text" maxlength="10" show-word-limit></el-input>
     <div style="margin:20px 0;"></div>
     
@@ -190,4 +202,7 @@ focus	使 input 获取焦点
 */
 </script>
 <style>
+.el-input{
+  margin-bottom: 40px;
+}
 </style>

@@ -1,15 +1,18 @@
 <template>
   <div>
     <!-- 基础用法 -->
+    <h3>基础用法</h3>
     <el-checkbox v-model="checked">备选项</el-checkbox>
 
     <!-- 禁用状态 设置disabled属性-->
+    <h3>禁用状态</h3>
     <el-checkbox v-model="checked1" disabled></el-checkbox>
     <el-checkbox v-model="checked2" disabled></el-checkbox>
 
     <!-- 多选框组 适用于多个勾选框绑定到同一个数组的情景，通过是否勾选来表示这一组选项中选中的项-->
     <!-- el-checkbox 的 label属性是该 checkbox 对应的值，若该标签中无内容，则该属性也充当 checkbox 按钮后的介绍 -->
     <!-- label与数组中的元素值相对应，如果存在指定的值则为选中状态，否则为不选中 -->
+    <h3>多选框组</h3>
     <el-checkbox-group v-model="checkList">
       <el-checkbox label="复选框A"></el-checkbox>
       <el-checkbox label="复选框B"></el-checkbox>
@@ -20,6 +23,7 @@
 
     <!-- indeterminate 状态  indeterminate 属性用以表示 checkbox 的不确定状态，一般用于实现全选的效果-->
     <!-- 注：el-checkbox-group中缺少 v-model会导致内容不显示 -->
+    <h3>indeterminate 不确定状态</h3>
     <div>
       <el-checkbox
         :indeterminate="isIndeterminate"
@@ -33,11 +37,12 @@
     </div>
 
     <!-- 使用 min 和 max 属性能够限制可以被勾选的项目的数量。 -->
+    <h3>限制可以被勾选的项目的数量</h3>
     <limitcount></limitcount>
 
     <!-- 按钮样式    把el-checkbox元素替换为el-checkbox-button元素即可    size属性-->
     <!-- 设置border属性可以渲染为带有边框的多选框 -->
-    
+    <h3>按钮样式</h3>
     <checkboxbutton></checkboxbutton>
   </div>
 </template>
@@ -127,4 +132,7 @@ export default {
 */
 </script>
 <style lang="less" scoped>
+h3{
+  margin-top: 30px;
+}
 </style>

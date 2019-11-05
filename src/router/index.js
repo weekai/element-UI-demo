@@ -12,6 +12,16 @@ import input from "../pages/input/input.vue"
 import inputNumber from "../pages/inputNumber/inputNumber.vue"
 import select from "../pages/select/select.vue"
 import cascader from "../pages/cascader/cascader.vue"
+import switchs from "../pages/switch/switch.vue"
+import slider from "../pages/slider/slider.vue"
+import timePicker from "../pages/timePicker/timePicker.vue"
+import datePicker from "../pages/datePicker/datePicker.vue"
+import dateTimePicker from "../pages/dateTimePicker/dateTimePicker.vue"
+import upload from "../pages/upload/upload.vue"
+import rate from "../pages/rate/rate.vue"
+import colorPicker from "../pages/colorPicker/colorPicker.vue"
+import transfer from "../pages/transfer/transfer.vue"
+import form from "../pages/form/form.vue"
 
 Vue.use(VueRouter)
 
@@ -65,6 +75,46 @@ const router = new VueRouter({
         {
             path: '/cascader',
             component: cascader
+        },
+        {
+            path: '/switch',
+            component: switchs
+        },
+        {
+            path: '/slider',
+            component: slider
+        },
+        {
+            path: '/timePicker',
+            component: timePicker
+        },
+        {
+            path: '/datePicker',
+            component: datePicker
+        },
+        {
+            path: '/dateTimePicker',
+            component: dateTimePicker
+        },
+        {
+            path: '/upload',
+            component: upload
+        },
+        {
+            path: '/rate',
+            component: rate
+        },
+        {
+            path: '/colorPicker',
+            component: colorPicker
+        },
+        {
+            path: '/transfer',
+            component: transfer
+        },
+        {
+            path: '/form',
+            component: form
         }
     ],
     // mode: "history"

@@ -2,6 +2,7 @@
   <div>
     <!-- 基础用法 -->
     <!-- 要使用 Radio 组件，只需要设置v-model绑定变量，选中意味着变量的值为相应 Radio label属性的值，label可以是String、Number或Boolean。 -->
+    <h3>基础用法</h3>
     <div>
       <el-radio v-model="radio" label="1">备选项</el-radio>
       <el-radio v-model="radio" label="2">备选项</el-radio>
@@ -9,12 +10,14 @@
 
     <!-- 禁用状态 -->
     <!-- 在el-radio元素中设置disabled属性即可，它接受一个Boolean，true为禁用 -->
+    <h3>禁用状态</h3>
     <div>
       <el-radio disabled v-model="radio1" label="禁用">备选项</el-radio>
       <el-radio disabled v-model="radio1" label="选中且禁用">备选项</el-radio>
     </div>
 
     <!-- 单选框组   适用于在多个互斥的选项中选择的场景-->
+    <h3>单选框组</h3>
     <div>
       <el-radio-group v-model="radio2">
         <el-radio :label="3">备选项</el-radio>
@@ -25,6 +28,7 @@
 
     <!-- 按钮样式 -->
     <!-- el-radio元素换成el-radio-button元素即可，此外，Element 还提供了size属性 -->
+    <h3>按钮样式</h3>
     <div>
       <div>
         <el-radio-group v-model="radio3">
@@ -61,6 +65,7 @@
     </div>
 
     <!-- 带有边框 -->
+    <h3>带有边框</h3>
     <div>
       <div>
         <el-radio v-model="radio7" label="1" border>备选项1</el-radio>
@@ -139,4 +144,7 @@ export default {
 };
 </script>
 <style scoped>
+h3 {
+  margin-top: 30px;
+}
 </style>

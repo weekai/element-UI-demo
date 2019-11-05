@@ -75,6 +75,56 @@ const menu = [
     cn: "级联选择器",
     en: "cascader",
     route: "/cascader"
+  },
+  {
+    cn: "开关",
+    en: "switch",
+    route: "/switch"
+  },
+  {
+    cn: "滑块",
+    en: "slider",
+    route: "/slider"
+  },
+  {
+    cn: "时间选择器",
+    en: "timePicker",
+    route: "/timePicker"
+  },
+  {
+    cn: "日期选择器",
+    en: "datePicker",
+    route: "/datePicker"
+  },
+  {
+    cn: "日期时间选择器",
+    en: "dateTimePicker",
+    route: "/dateTimePicker"
+  },
+  {
+    cn: "上传",
+    en: "upload",
+    route: "/upload"
+  },
+  {
+    cn: "评分",
+    en: "rate",
+    route: "/rate"
+  },
+  {
+    cn: "颜色选择器",
+    en: "colorPicker",
+    route: "/colorPicker"
+  },
+  {
+    cn: "穿梭框",
+    en: "transfer",
+    route: "/transfer"
+  },
+  {
+    cn: "表单",
+    en: "form",
+    route: "/form"
   }
 ];
 export default {
@@ -113,6 +163,8 @@ export default {
   a {
     color: #333;
     user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
     text-decoration: none;
     text-align: center;
     font-weight: bold;

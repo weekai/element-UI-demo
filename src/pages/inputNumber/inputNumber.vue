@@ -4,27 +4,33 @@
 
     <!-- 基础用法 -->
     <!-- 需要在el-input-number元素中使用v-model绑定变量即可，变量的初始值即为默认值 -->
+    <h3>基础用法</h3>
     <el-input-number v-model="num" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
 
     <!-- 禁用状态 -->
     <!-- disabled属性接受一个Boolean，设置为true即可禁用整个组件 -->
     <!-- 不设置min和max时，最小值为 0。 -->
+    <h3>禁用状态</h3>
     <el-input-number v-model="num" :disabled="true"></el-input-number>
 
     <!-- 步数 -->
     <!-- 允许定义递增递减的步数控制  设置step属性可以控制步长，接受一个Number-->
+    <h3>步数</h3>
     <el-input-number v-model="num" :step="2"></el-input-number>
 
     <!-- 严格步数 -->
     <!-- step-strictly属性接受一个Boolean。如果这个属性被设置为true，则只能输入步数的倍数 -->
+    <h3>严格步数</h3>
     <el-input-number v-model="num" :step="2" step-strictly></el-input-number>
 
     <!-- 精度 -->
     <!-- 设置 precision 属性可以控制数值精度，接收一个 Number。 -->
     <!-- precision 的值必须是一个非负整数，并且不能小于 step 的小数位数。 -->
+    <h3>精度</h3>
     <el-input-number v-model="num1" :precision="2" :step="0.1" :max="10"></el-input-number>
 
     <!-- 尺寸  提供了 medium、small、mini 三种尺寸的数字输入框-->
+    <h3>尺寸</h3>
     <el-input-number v-model="num1"></el-input-number>
     <el-input-number size="medium" v-model="num2"></el-input-number>
     <el-input-number size="small" v-model="num3"></el-input-number>
@@ -32,6 +38,7 @@
 
     <!-- 按钮位置 -->
     <!-- 设置 controls-position 属性可以控制按钮位置。 -->
+    <h3>按钮位置</h3>
     <el-input-number
       v-model="num"
       controls-position="right"
@@ -89,4 +96,8 @@ select	      选中 input 中的文字	—
 */
 </script>
 <style>
+.el-input-number {
+  display: block;
+  margin: 10px;
+}
 </style>
